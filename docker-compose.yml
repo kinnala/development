@@ -1,0 +1,10 @@
+version: '2.0'
+services:
+  scikit-fem:
+    build: scikit-fem
+    ports:
+    - "8888:8888"
+    volumes:
+    - ..:/src
+  latex:
+    build: latex
