@@ -16,7 +16,9 @@ RUN pip install numpy\
     pygmsh\
     pyamg\
     pytest\
-    jupyter
+    jupyter\
+    sphinx\
+    sphinx_rtd_theme
 
 RUN pip install scikit-sparse
 
