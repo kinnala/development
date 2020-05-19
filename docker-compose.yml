@@ -2,9 +2,11 @@ version: '2.0'
 services:
   scikit-fem:
     build: scikit-fem
+    image: knlje/scikit-fem
     ports:
     - "8888:8888"
     volumes:
     - ..:/src
-  latex:
-    build: latex
+    command: jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
+    stdin_open: true
+    tty: true
